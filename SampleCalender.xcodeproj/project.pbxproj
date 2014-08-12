@@ -23,6 +23,9 @@
 		1B6B79B81989E1A10004F706 /* SampleCalenderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B79B71989E1A10004F706 /* SampleCalenderTests.m */; };
 		1B6F26A5199A5357008F0426 /* DayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F26A4199A5357008F0426 /* DayViewController.m */; };
 		1BE0A593199A54DC00C106FF /* Day.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0A592199A54DC00C106FF /* Day.m */; };
+		1BE0A598199A5EAE00C106FF /* noimage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1BE0A595199A5EAE00C106FF /* noimage.gif */; };
+		1BE0A599199A5EAE00C106FF /* norating.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE0A596199A5EAE00C106FF /* norating.png */; };
+		1BE0A59A199A5EAE00C106FF /* rating.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE0A597199A5EAE00C106FF /* rating.png */; };
 		2C8BD86E8787447F8C95A2B1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC81AD027EA45E99DD3770C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		1B6F26A4199A5357008F0426 /* DayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayViewController.m; sourceTree = "<group>"; };
 		1BE0A591199A54DC00C106FF /* Day.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Day.h; sourceTree = "<group>"; };
 		1BE0A592199A54DC00C106FF /* Day.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Day.m; sourceTree = "<group>"; };
+		1BE0A595199A5EAE00C106FF /* noimage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = noimage.gif; sourceTree = "<group>"; };
+		1BE0A596199A5EAE00C106FF /* norating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = norating.png; sourceTree = "<group>"; };
+		1BE0A597199A5EAE00C106FF /* rating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rating.png; sourceTree = "<group>"; };
 		5BC81AD027EA45E99DD3770C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C7AEE242A44848B2421A11 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +150,7 @@
 		1B6B79931989E1A10004F706 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1BE0A594199A5EAE00C106FF /* img */,
 				1B6B79941989E1A10004F706 /* SampleCalender-Info.plist */,
 				1B6B79951989E1A10004F706 /* InfoPlist.strings */,
 				1B6B79981989E1A10004F706 /* main.m */,
@@ -168,6 +175,16 @@
 				1B6B79B41989E1A10004F706 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BE0A594199A5EAE00C106FF /* img */ = {
+			isa = PBXGroup;
+			children = (
+				1BE0A595199A5EAE00C106FF /* noimage.gif */,
+				1BE0A596199A5EAE00C106FF /* norating.png */,
+				1BE0A597199A5EAE00C106FF /* rating.png */,
+			);
+			path = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +268,9 @@
 				1B6B79A51989E1A10004F706 /* Images.xcassets in Resources */,
 				1B6B79971989E1A10004F706 /* InfoPlist.strings in Resources */,
 				1B6B79A01989E1A10004F706 /* Main.storyboard in Resources */,
+				1BE0A599199A5EAE00C106FF /* norating.png in Resources */,
+				1BE0A59A199A5EAE00C106FF /* rating.png in Resources */,
+				1BE0A598199A5EAE00C106FF /* noimage.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

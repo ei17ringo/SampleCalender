@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 
-@interface DayViewController : UIViewController
+@interface DayViewController : UIViewController<UINavigationControllerDelegate,UIImagePickerControllerDelegate,UITextViewDelegate>{
+    NSString *_assetsUrl;    //assetsUrlを格納するインスタンス
+    ALAssetsLibrary *_library;  //ALAssetsLibraryのインスタンス
+    BOOL _ratingFlag1;
+    BOOL _ratingFlag2;
+    BOOL _ratingFlag3;
+}
+
 
 //カレンダーから移動してきた際にyyyy年mm月dd日で日付を保存するためのプロパティ
 @property (strong,nonatomic)NSString *DayString;
@@ -20,7 +28,7 @@
 @property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
 @property (weak, nonatomic) IBOutlet UIButton *myButton;
 @property (weak, nonatomic) IBOutlet UIImageView *sukeboPic;
-@property (weak, nonatomic) IBOutlet UILabel *diaryPic;
+@property (weak, nonatomic) IBOutlet UILabel *diaryDate;
 @property (weak, nonatomic) IBOutlet UITextView *Diary;
 @property (weak, nonatomic) IBOutlet UIImageView *rating1;
 @property (weak, nonatomic) IBOutlet UIImageView *rating2;

@@ -27,7 +27,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [[self.navigationController navigationBar] setTranslucent:NO];
+    
+    [[self calendarView] registerDayCellClass:[Day class]];
+    
+    UIBarButtonItem *todayButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Today", nil)
+                                                                    style:UIBarButtonItemStylePlain
+                                                                   target:[self calendarView]
+                                                                   action:@selector(showCurrentMonth)];
+    [self.navigationItem setRightBarButtonItem:todayButton];
 }
 
 - (void)calendarView:(RDVCalendarView *)calendarView configureDayCell:(RDVCalendarDayCell *)dayCell
@@ -48,9 +56,9 @@
         [[exampleDayCell notificationView] setHidden:NO];
     }
     
-    //    if (index % 5 == 0) {
-    //        [[exampleDayCell notificationView] setHidden:NO];
-    //
+//        if (index % 5 == 0) {
+//            [[exampleDayCell notificationView] setHidden:NO];
+//        }
 }
 
 - (void)calendarView:(RDVCalendarView *)calendarView didSelectCellAtIndex:(NSInteger)index{
