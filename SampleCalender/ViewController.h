@@ -10,6 +10,10 @@
 #import "RDVCalendarViewController.h"
 #import "DayViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : RDVCalendarViewController
+
+@property (nonatomic, strong) RDVCalendarView *calendarView;
+
+@property (nonatomic) BOOL clearSelectionViewWillAppear;
 
 @end

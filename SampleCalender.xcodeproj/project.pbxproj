@@ -22,6 +22,7 @@
 		1B6B79B61989E1A10004F706 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B6B79B41989E1A10004F706 /* InfoPlist.strings */; };
 		1B6B79B81989E1A10004F706 /* SampleCalenderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B79B71989E1A10004F706 /* SampleCalenderTests.m */; };
 		1B6F26A5199A5357008F0426 /* DayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F26A4199A5357008F0426 /* DayViewController.m */; };
+		1BE0A593199A54DC00C106FF /* Day.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0A592199A54DC00C106FF /* Day.m */; };
 		2C8BD86E8787447F8C95A2B1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC81AD027EA45E99DD3770C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		1B6B79C11989E1EF0004F706 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		1B6F26A3199A5357008F0426 /* DayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayViewController.h; sourceTree = "<group>"; };
 		1B6F26A4199A5357008F0426 /* DayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayViewController.m; sourceTree = "<group>"; };
+		1BE0A591199A54DC00C106FF /* Day.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Day.h; sourceTree = "<group>"; };
+		1BE0A592199A54DC00C106FF /* Day.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Day.m; sourceTree = "<group>"; };
 		5BC81AD027EA45E99DD3770C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C7AEE242A44848B2421A11 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +126,8 @@
 		1B6B79921989E1A10004F706 /* SampleCalender */ = {
 			isa = PBXGroup;
 			children = (
+				1BE0A591199A54DC00C106FF /* Day.h */,
+				1BE0A592199A54DC00C106FF /* Day.m */,
 				1B6B799B1989E1A10004F706 /* AppDelegate.h */,
 				1B6B799C1989E1A10004F706 /* AppDelegate.m */,
 				1B6B799E1989E1A10004F706 /* Main.storyboard */,
@@ -299,6 +304,7 @@
 			files = (
 				1B6B79A31989E1A10004F706 /* ViewController.m in Sources */,
 				1B6B799D1989E1A10004F706 /* AppDelegate.m in Sources */,
+				1BE0A593199A54DC00C106FF /* Day.m in Sources */,
 				1B6B79991989E1A10004F706 /* main.m in Sources */,
 				1B6F26A5199A5357008F0426 /* DayViewController.m in Sources */,
 			);

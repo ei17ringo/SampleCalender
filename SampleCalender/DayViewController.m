@@ -46,4 +46,15 @@
 }
 */
 
+- (IBAction)myButton:(id)sender {
+}
+
+- (IBAction)closeKeyboard:(id)sender {
+}
+
+- (IBAction)changeSwitch:(id)sender {
+}
+
+- (IBAction)saveDiary:(id)sender {
+}
 @end
