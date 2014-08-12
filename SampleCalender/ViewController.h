@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RDVCalendarViewController.h"
+#import "DayViewController.h"
 
 @interface ViewController : UIViewController
 

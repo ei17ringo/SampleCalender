@@ -21,6 +21,8 @@
 		1B6B79AE1989E1A10004F706 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6B79901989E1A10004F706 /* UIKit.framework */; };
 		1B6B79B61989E1A10004F706 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B6B79B41989E1A10004F706 /* InfoPlist.strings */; };
 		1B6B79B81989E1A10004F706 /* SampleCalenderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B79B71989E1A10004F706 /* SampleCalenderTests.m */; };
+		1B6F26A5199A5357008F0426 /* DayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F26A4199A5357008F0426 /* DayViewController.m */; };
+		2C8BD86E8787447F8C95A2B1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC81AD027EA45E99DD3770C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,11 @@
 		1B6B79B31989E1A10004F706 /* SampleCalenderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleCalenderTests-Info.plist"; sourceTree = "<group>"; };
 		1B6B79B51989E1A10004F706 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1B6B79B71989E1A10004F706 /* SampleCalenderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleCalenderTests.m; sourceTree = "<group>"; };
+		1B6B79C11989E1EF0004F706 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		1B6F26A3199A5357008F0426 /* DayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayViewController.h; sourceTree = "<group>"; };
+		1B6F26A4199A5357008F0426 /* DayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayViewController.m; sourceTree = "<group>"; };
+		5BC81AD027EA45E99DD3770C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C7AEE242A44848B2421A11 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,7 @@
 				1B6B798F1989E1A10004F706 /* CoreGraphics.framework in Frameworks */,
 				1B6B79911989E1A10004F706 /* UIKit.framework in Frameworks */,
 				1B6B798D1989E1A10004F706 /* Foundation.framework in Frameworks */,
+				2C8BD86E8787447F8C95A2B1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +94,7 @@
 				1B6B79B11989E1A10004F706 /* SampleCalenderTests */,
 				1B6B798B1989E1A10004F706 /* Frameworks */,
 				1B6B798A1989E1A10004F706 /* Products */,
+				D8C7AEE242A44848B2421A11 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +110,12 @@
 		1B6B798B1989E1A10004F706 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B6B79C11989E1EF0004F706 /* EventKit.framework */,
 				1B6B798C1989E1A10004F706 /* Foundation.framework */,
 				1B6B798E1989E1A10004F706 /* CoreGraphics.framework */,
 				1B6B79901989E1A10004F706 /* UIKit.framework */,
 				1B6B79AB1989E1A10004F706 /* XCTest.framework */,
+				5BC81AD027EA45E99DD3770C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +128,8 @@
 				1B6B799E1989E1A10004F706 /* Main.storyboard */,
 				1B6B79A11989E1A10004F706 /* ViewController.h */,
 				1B6B79A21989E1A10004F706 /* ViewController.m */,
+				1B6F26A3199A5357008F0426 /* DayViewController.h */,
+				1B6F26A4199A5357008F0426 /* DayViewController.m */,
 				1B6B79A41989E1A10004F706 /* Images.xcassets */,
 				1B6B79931989E1A10004F706 /* Supporting Files */,
 			);
@@ -159,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B6B79BB1989E1A10004F706 /* Build configuration list for PBXNativeTarget "SampleCalender" */;
 			buildPhases = (
+				E29249B02C324DF894A89C78 /* Check Pods Manifest.lock */,
 				1B6B79851989E1A10004F706 /* Sources */,
 				1B6B79861989E1A10004F706 /* Frameworks */,
 				1B6B79871989E1A10004F706 /* Resources */,
+				03362C9881A447FA914FA007 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +259,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03362C9881A447FA914FA007 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E29249B02C324DF894A89C78 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B6B79851989E1A10004F706 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -252,6 +300,7 @@
 				1B6B79A31989E1A10004F706 /* ViewController.m in Sources */,
 				1B6B799D1989E1A10004F706 /* AppDelegate.m in Sources */,
 				1B6B79991989E1A10004F706 /* main.m in Sources */,
+				1B6F26A5199A5357008F0426 /* DayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +422,7 @@
 		};
 		1B6B79BC1989E1A10004F706 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C7AEE242A44848B2421A11 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -386,6 +436,7 @@
 		};
 		1B6B79BD1989E1A10004F706 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C7AEE242A44848B2421A11 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -456,6 +507,7 @@
 				1B6B79BD1989E1A10004F706 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B6B79BE1989E1A10004F706 /* Build configuration list for PBXNativeTarget "SampleCalenderTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +516,7 @@
 				1B6B79C01989E1A10004F706 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
